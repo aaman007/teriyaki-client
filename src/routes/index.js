@@ -9,6 +9,7 @@ const Login = React.lazy(() => import('../pages/Login'));
 const Order = React.lazy(() => import('../pages/Orders'));
 const OrderDetails = React.lazy(() => import('../pages/OrderDetails'));
 const ProductDetails = React.lazy(() => import('../pages/ProductDetails'));
+const Cart = React.lazy(() => import('../pages/Cart'));
 
 
 // Route configuration with unique name identifiers
@@ -17,37 +18,40 @@ const routes =  [
         name: 'Home',
         component: Home,
         path: urls.home(),
-        layout: BaseLayout,
-        isProtected: false
+        layout: BaseLayout
     },
     {
         name: 'Login',
         component: Login,
         path: urls.login(),
         layout: AuthLayout,
-        isProtected: false,
-        redirectIfLoggedIn: true
+        redirectIfLoggedIn: false
     },
     {
         name: 'Orders',
         component: Order,
         path: urls.orders(),
         layout: BaseLayout,
-        isProtected: true
+        isProtected: false
     },
     {
-        name: 'Orders Details',
+        name: 'OrderDetails',
         component: OrderDetails,
         path: urls.orderDetails(),
         layout: BaseLayout,
-        isProtected: true
+        isProtected: false
     },
     {
-        name: 'Product Details',
+        name: 'ProductDetails',
         component: ProductDetails,
         path: urls.productDetails(),
-        layout: BaseLayout,
-        isProtected: false
+        layout: BaseLayout
+    },
+    {
+        name: 'Cart',
+        component: Cart,
+        path: urls.cart(),
+        layout: BaseLayout
     }
 ];
 

@@ -1,4 +1,7 @@
 :root {
+  /* Colors */
+  --primary-color: #146886;
+  --secondary-color: #d47717;
 }
 
 * {

@@ -1,0 +1,42 @@
+.cartButton {
+    position: fixed;
+    top: 45%;
+    right: 5px;
+    z-index: 5;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartButton:hover {
+    transform: none;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.quantity img {
+    margin-right: 5px;
+    height: 20px;
+}
+
+.amount {
+    width: 100px;
+    padding: 6px 8px;
+    background: aliceblue;
+    color: #4e4a4a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

@@ -1,11 +1,11 @@
 import Container from "../components/ui/Container";
 
-const Orders = () => {
+const Cart = () => {
     return (
         <Container>
-            <p> Orders </p>
+            <p> Cart </p>
         </Container>
     )
 };
 
-export default Orders;
+export default Cart;

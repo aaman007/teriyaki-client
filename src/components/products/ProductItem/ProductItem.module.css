@@ -1,0 +1,31 @@
+.product {
+}
+
+.product div {
+    margin: 10px 0;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.price {
+    color: brown;
+}
+
+.description {
+    text-align: center;
+}
+
+.buttonAnimated {
+    animation: shakeAnimation 500ms ease-in-out;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: rotateZ(-2deg);
+    }
+    100% {
+        transform: rotateZ(2deg);
+    }
+}

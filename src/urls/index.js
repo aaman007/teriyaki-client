@@ -3,7 +3,7 @@ export const login = () => {
 };
 
 export const home = () => {
-    return '/';
+    return '/home';
 };
 
 export const productDetails = (productId = ':productId') => {
@@ -17,3 +17,7 @@ export const orders = () => {
 export const orderDetails = (orderId = ':orderId') => {
     return `/orders/${orderId}`;
 };
+
+export const cart = () => {
+    return '/cart';
+}

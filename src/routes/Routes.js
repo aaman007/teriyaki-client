@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Switch, Route, Redirect } from 'react-router-dom';
 import routes from "./index";
 import { login as loginUrl, home as homeUrl } from '../urls';
+import Page404 from "../components/error/Page404";
 
 const Routes = () => {
     const isLoggedIn = useSelector(state => state?.auth.isLoggedIn);
@@ -38,10 +39,14 @@ const Routes = () => {
 
     return (
         <Switch>
+            <Route path={'/'} exact>
+                <Redirect to={homeUrl()} />
+            </Route>
+
             {routes.map(renderRoute)}
 
             <Route path={'*'}>
-                <p> Not Found </p>
+                <Page404 />
             </Route>
         </Switch>
     )
